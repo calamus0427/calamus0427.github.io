@@ -4,4 +4,7 @@
 }
 ul {list-style-type: none;}
 
-.indexNav li{float:left;}
+.indexNav li{float:left;
+    color:white;
+    font: 30px ChantelliAntiquaRegular, Helvetica, sans-serif;
+    padding:50px;}
