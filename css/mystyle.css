@@ -1,0 +1,7 @@
+.background{
+    background:#220DDD url(bg.jpg) no-repeat  top;
+    background-size:100% auto;
+}
+ul {list-style-type: none;}
+
+.indexNav li{float:left;}
