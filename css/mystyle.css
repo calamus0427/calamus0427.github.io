@@ -9,8 +9,7 @@ ul {list-style-type: none;}
     font: 30px ChantelliAntiquaRegular, Helvetica, sans-serif;
     margin-left:50px;}
 .indexnav{margin-top:200px;margin-left:35%;}
-.lefterea{width:35%;background-color: cornflowerblue ;position:fixed;
-    opacity:80%;}
+.lefterea{width:35%;background-color: cornflowerblue ;position:fixed;height:100%;}
 .righterea{margin-left:35%;width:65%;background-color: lightcyan;  position:fixed;height:100%;}
 .portrait{width:150px;height:150px;border:1px solid white;margin-top:50px;margin-left:auto;margin-right:auto;
     -webkit-border-radius:75px;
