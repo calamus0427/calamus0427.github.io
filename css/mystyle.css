@@ -15,6 +15,10 @@ ul {list-style-type: none;}
     -webkit-border-radius:75px;
     -moz-border-radius:75px;
     border-radius:75px;
-background-image:url();}
+background:url('../images/portairt.jpg') no-repeat;
+    background-size:100% 100%;}
 .fontface{font:16px ChantelliAntiquaRegular, Helvetica, sans-serif;}
-.intension{color:#000}
+.intension{text-align:center;margin-top:10px;font-size:20px;}
+.colorWhite{color:white;}
+.colorBlack{color:black}
+.information{width:80%;height:50px;margin:0 auto;border:1px solid red;}
