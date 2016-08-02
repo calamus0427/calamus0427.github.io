@@ -6,23 +6,48 @@
     <link rel="stylesheet" href="css/mystyle.css" />
     <link rel="stylesheet" href="css/reset.css" />
     <!--<link href="http://cdn.bootcss.com/bootstrap/4.0.0-alpha.3/css/bootstrap.min.css" rel="stylesheet">-->
-    <script src="http://cdn.bootcss.com/jquery/3.1.0/jquery.min.js"></script>
+
     <!--<script src="http://cdn.bootcss.com/bootstrap/4.0.0-alpha.3/js/bootstrap.min.js"></script>-->
     <script src="js/html5.js"></script>
     <title>Calamus</title>
 </head>
 
 <body class="background">
-<!--<div class="btn">-->
-    <!--换背景图片<span class="glyphicon glyphicon-search"></span>-->
-<!--</div>-->
+<header class="indextop">
+    <div class="bgmchange colorWhite">
+        <span class="titleChangebgm" id="changebtn"><a href="#">切换背景图片</a></span>
+        <ul class="bgmchangelist" id="bgmlist">
+            <li><a href="#">背景图1</a></li>
+            <li><a href="#">背景图1</a></li>
+            <li><a href="#">背景图1</a></li>
+            <li><a href="#">背景图1</a></li>
+        </ul>
+    </div>
+    <div class="musicbgm">
+        <audio src="music/桃音モモ - Nyan Cat [mqms2].mp3" controls="controls">
+            Your browser does not support the audio element.
+        </audio>
+    </div>
+</header>
+
 <div class="indexnav">
     <ul class="indexmenu">
         <li><a art="my refume" href="refume.html" >my refume</a></li>
         <li><a art="my blog" href="http://www.cnblogs.com/calamus/" target="_blank" >my blog</a></li>
-        <li><a art="my project" href="#" >my project</a></li>
+        <li><a art="my project" href="http://www.github.com/calamus0427" target="_blank">my project</a></li>
         <li><a art="my website" href="http://www.calamus.cn" target="_blank">my website</a></li>
+        <li><a art="dear you" href="dearMe.html">dear me</a></li>
     </ul>
 </div>
+<script src="http://cdn.bootcss.com/jquery/3.1.0/jquery.min.js"></script>
+<script>
+    $(document).ready(function() {
+        $('#changebtn').hover(function() {
+            $(this).find('.bgmchangelist').css('display', 'block');
+        }, function() {
+            $(this).find('.bgmchangelist').css('display', 'none');
+        });
+    });
+</script>
 </body>
 </html>

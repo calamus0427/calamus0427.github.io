@@ -8,7 +8,7 @@ ul {list-style-type: none;}
     color:white;
     font: 30px ChantelliAntiquaRegular, Helvetica, sans-serif;
     margin-left:50px;}
-.indexnav{margin-top:200px;margin-left:35%;}
+.indexnav{margin-top:200px;margin-left:30%;}
 .lefterea{width:35%;background-color: cornflowerblue ;position:fixed;height:100%;}
 .righterea{margin-left:35%;width:65%;background-color: lightcyan;  position:fixed;height:100%;}
 .portrait{width:150px;height:150px;border:1px solid white;margin-top:50px;margin-left:auto;margin-right:auto;
@@ -22,3 +22,8 @@ background:url('../images/portairt.jpg') no-repeat;
 .colorWhite{color:white;}
 .colorBlack{color:black}
 .information{width:80%;height:50px;margin:0 auto;border:1px solid red;}
+.titleChangebgm:hover{color:}
+.indextop{margin-top:10px;}
+.musicbgm{position:relative;left:65%;}
+.bgmchange{position:absolute;left:90%;}
+.bgmchangelist{display:none;}

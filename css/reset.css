@@ -18,6 +18,7 @@
     font-weight: normal;
     font-style: normal;
 }
+/*a标签重置*/
 a:hover{text-decoration:none; color:navajowhite}
 a:link , a:hover , a:active , a:visited{text-decoration:none;}
 a{text-decoration:none; color:white}
