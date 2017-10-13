@@ -7,45 +7,60 @@
     <link rel="stylesheet" href="css/mystyle.css" />
     <link rel="stylesheet" href="css/reset.css" />
     <title>Calamus</title>
+    <style>
+        .loading {
+            width: 100%;
+            height: 100%;
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: 100;
+            background-color: white;
+        }
+        
+        .loading img {
+            position: absolute;
+            top: 20vh;
+            left: 50%;
+        }
+    </style>
 </head>
 
 <body class="background">
-    <canvas id="canvas" width="1000" height="380"></canvas>
-    <header class="indextop">
-        <!-- <div class="bgmchange colorWhite">
-        <span class="titleChangebgm" id="changebtn"><a href="#">切换背景图片</a></span>
-        <ul class="bgmchangelist" id="bgmlist">
-            <li><a href="#">背景图1</a></li>
-            <li><a href="#">背景图1</a></li>
-            <li><a href="#">背景图1</a></li>
-            <li><a href="#">背景图1</a></li>
-        </ul>
-    </div> -->
-        <div class="musicbgm">
-            <audio autoplay="autoplay" src="music\桃音モモ - Nyan Cat [mqms2].mp3" controls="controls">
-            Your browser does not support the audio element.
-        </audio>
-        </div>
-    </header>
-
-    <div class="indexnav">
-        <ul class="indexmenu">
-            <!--         <li><a art="my refume" href="pages/refume.html" >my refume</a></li> -->
-            <li><a art="my blog" href="http://www.cnblogs.com/calamus/" target="_blank">my blog</a></li>
-            <li><a art="my project" href="/pages/myProject/index.html" target="_blank">my project</a></li>
-            <li><a art="my project" href="http://www.github.com/calamus0427" target="_self">my github</a></li>
-            <li><a art="my website" href="http://www.calamus.我爱你" target="_blank">my website</a></li>
-            <li><a art="dear you" href="/pages/dearMe.html">dear me</a></li>
-        </ul>
+    <div class="loading">
+        <img src="./images/koi.jpg" />
     </div>
+    <div class="show">
+        <canvas id="canvas" width="1000" height="380"></canvas>
+        <header class="indextop">
+            <div class="musicbgm">
+                <audio autoplay="autoplay" src="music\花澤香菜 - 恋爱サーキュレーション.mp3" controls="controls">
+                    Your browser does not support the audio element.
+                </audio>
+            </div>
+        </header>
+
+        <div class="indexnav">
+            <ul class="indexmenu">
+                <!--         <li><a art="my refume" href="pages/refume.html" >my refume</a></li> -->
+                <li><a art="my blog" href="http://www.cnblogs.com/calamus/" target="_blank">my blog</a></li>
+                <li><a art="my project" href="/pages/myProject/index.html" target="_blank">my project</a></li>
+                <li><a art="my project" href="http://www.github.com/calamus0427" target="_self">my github</a></li>
+                <li><a art="my website" href="http://www.calamus.我爱你" target="_blank">my website</a></li>
+                <li><a art="dear you" href="/pages/dearMe.html">dear me</a></li>
+            </ul>
+        </div>
+    </div>
+
     <script src="js/jquery/jquery.min.js"></script>
+    <!-- <script src="https://cdn.bootcss.com/jquery/3.1.0/jquery.min.js"></script> -->
     <script type="text/javascript" src="js/commonFunctions.js"></script>
     <script src="js/html5.js"></script>
     <script src="js/star.js"></script>
     <script>
         $(function() {
-            var bgCount = -1;
-            //    var bgDiv = $(".background") ;
+            var bgCount = 1;
+
             function changeBg() {
 
                 var bgUrl = [
@@ -63,6 +78,10 @@
                 setTimeout(changeBg, 1000 * 60);
             }
             changeBg();
+            setInterval(function() {
+                // $(".loading").fadeOut();
+                $('.loading').fadeOut();
+            }, 1200)
         })
     </script>
 </body>
