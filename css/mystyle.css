@@ -1,5 +1,5 @@
 .background {
-    background: url(bg.jpg) no-repeat;
+    background: url("") repeat;
     background-size: 100% auto;
     overflow-x: hidden;
 }
@@ -11,7 +11,8 @@ ul {
 .indexmenu li {
     float: left;
     color: white;
-    font: 30px ChantelliAntiquaRegular, Helvetica, sans-serif;
+    font-size: 30px;
+    /* font: 30px ChantelliAntiquaRegular, Helvetica, sans-serif; */
     margin-left: 50px;
 }
 

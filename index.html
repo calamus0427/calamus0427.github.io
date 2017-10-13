@@ -10,9 +10,7 @@
 </head>
 
 <body class="background">
-    <canvas id="canvas" width="1000" height="380">
-
-</canvas>
+    <canvas id="canvas" width="1000" height="380"></canvas>
     <header class="indextop">
         <!-- <div class="bgmchange colorWhite">
         <span class="titleChangebgm" id="changebtn"><a href="#">切换背景图片</a></span>
@@ -45,13 +43,27 @@
     <script src="js/html5.js"></script>
     <script src="js/star.js"></script>
     <script>
-        $(document).ready(function() {
-            $('#changebtn').hover(function() {
-                $(this).find('.bgmchangelist').css('display', 'block');
-            }, function() {
-                $(this).find('.bgmchangelist').css('display', 'none');
-            });
-        });
+        $(function() {
+            var bgCount = -1;
+            //    var bgDiv = $(".background") ;
+            function changeBg() {
+
+                var bgUrl = [
+                    "./images/bg1.jpg",
+                    "./images/bg2.jpg",
+                    "./images/bg3.jpeg",
+                    "./images/bg4.jpg",
+                    "./images/bg5.jpeg",
+                    "./images/bg6.png",
+                    "./images/bg7.jpg",
+                    "./images/bg8.jpg",
+                ];
+                bgCount = (bgCount + 1) % bgUrl.length;
+                $('body').css('background-image', 'url(' + bgUrl[bgCount] + ')');
+                setTimeout(changeBg, 1000 * 60 * 60);
+            }
+            changeBg();
+        })
     </script>
 </body>
 
