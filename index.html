@@ -7,80 +7,55 @@
     <link rel="stylesheet" href="css/mystyle.css" />
     <link rel="stylesheet" href="css/reset.css" />
     <title>Calamus</title>
-    <style>
-        .loading {
-            width: 100%;
-            height: 100%;
-            position: fixed;
-            top: 0;
-            left: 0;
-            z-index: 100;
-            background-color: white;
-        }
-        
-        .loading img {
-            position: absolute;
-            top: 20vh;
-            left: 50%;
-        }
-    </style>
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <link rel="icon" href="favicon.ico" type="image/x-icon">
 </head>
 
 <body class="background">
-    <div class="loading">
+    <!-- <div class="loading">
         <img src="./images/koi.jpg" />
-    </div>
+    </div> -->
     <div class="show">
+        <a title="music" onclick="musicControl()"><img class="musicControl" alt="显示音乐" src="./images/calamus.jpg" /></a>
         <canvas id="canvas" width="1000" height="380"></canvas>
         <header class="indextop">
             <div class="musicbgm">
-                <audio autoplay="autoplay" src="music\花澤香菜 - 恋爱サーキュレーション.mp3" controls="controls">
+                <audio id="audio" style=" visibility: hidden " autoplay="autoplay " src="music\花澤香菜 - 恋爱サーキュレーション.mp3 " controls="controls ">
                     Your browser does not support the audio element.
                 </audio>
             </div>
         </header>
 
-        <div class="indexnav">
-            <ul class="indexmenu">
-                <!--         <li><a art="my refume" href="pages/refume.html" >my refume</a></li> -->
-                <li><a art="my blog" href="http://www.cnblogs.com/calamus/" target="_blank">my blog</a></li>
-                <li><a art="my project" href="./pages/myProject/index.html" target="_blank">my project</a></li>
-                <li><a art="my github" href="http://www.github.com/calamus0427" target="_self">my github</a></li>
-                <li><a art="my website" href="http://www.calamus.我爱你" target="_blank">my website</a></li>
-                <!-- <li><a art="dear you" href="./pages/dearMe/7/index.html">dear me</a></li> -->
-                <li><a art="dear you" href="#">dear me</a></li>
+        <div class="indexnav ">
+            <ul class="indexmenu ">
+                <li><a art="my website " href="http://www.calamus.xyz " target="_blank ">my website</a></li>
+                <li><a art="my blog " href="http://www.cnblogs.com/calamus/ " target="_blank ">my blog</a></li>
+                <li><a art="my project " href="./pages/myProject/index.html " target="_blank ">my project</a></li>
+                <li><a art="my github " href="http://www.github.com/calamus0427 " target="_self ">my github</a></li>
+                <!-- <li><a art="dear you " href="./pages/dearMe/7/index.html ">dear me</a></li> -->
+                <li><a art="dear you " href="http://www.calamus.xyz/blog_w/">dear me</a></li>
             </ul>
         </div>
     </div>
 
-    <script src="js/jquery/jquery.min.js"></script>
-    <!-- <script src="https://cdn.bootcss.com/jquery/3.1.0/jquery.min.js"></script> -->
-    <script type="text/javascript" src="js/commonFunctions.js"></script>
-    <script src="js/html5.js"></script>
-    <script src="js/star.js"></script>
+    <script src="js/jquery/jquery.min.js "></script>
+    <!-- <script src="https://cdn.bootcss.com/jquery/3.1.0/jquery.min.js "></script> -->
+    <script type="text/javascript " src="js/commonFunctions.js "></script>
+    <script src="js/html5.js "></script>
+    <script src="js/star.js "></script>
     <script>
-        document.onreadystatechange = function() {
-            console.log(document.readyState); //可以检测出ninitilalized 还未载入complete 加载完成
-            if (document.readyState == 'complete') {
-                $(".loading").fadeOut();
-            }
-        }
         $(function() {
             var bgCount = 1;
 
             function changeBg() {
 
                 var bgUrl = [
-                    "./images/bg1.jpg",
-                    "./images/bg2.jpg",
-                    "./images/bg3.jpeg",
-                    "./images/bg4.jpg",
-                    "./images/bg5.jpeg",
-                    "./images/bg6.png",
-                    "./images/bg7.jpg",
-                    "./images/bg8.jpg",
+                    "./images/bg1.jpg ",
+                    "./images/bg2.jpg ",
+                    "./images/bg5.jpeg ",
+                    "./images/bg3.jpeg ",
+                    "./images/bg7.jpg ",
+                    "./images/bg8.jpg ",
                 ];
                 bgCount = (bgCount + 1) % bgUrl.length;
                 $('body').css('background-image', 'url(' + bgUrl[bgCount] + ')');
@@ -88,10 +63,17 @@
             }
             changeBg();
             // setInterval(function() {
-            //     // $(".loading").fadeOut();
+            //     // $(".loading ").fadeOut();
             //     $('.loading').fadeOut();
             // }, 1200)
+
         })
+
+        function musicControl() {
+            var music = document.getElementById("audio");
+            music.style.visibility = music.style.visibility ==
+                'hidden' ? 'visible' : 'hidden';
+        }
     </script>
 </body>
 
