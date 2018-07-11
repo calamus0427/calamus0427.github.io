@@ -54,6 +54,27 @@
             z-index: -1;
             opacity: 1;
         }
+        
+        .img_bg {
+            background: #9E9E9E;
+            opacity: 0.3;
+            display: none;
+            position: fixed;
+            width: 100%;
+            height: 100%;
+        }
+        
+        .img {
+            width: 200px;
+            height: 200px;
+            display: none;
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            margin: auto;
+        }
     </style>
 </head>
 
@@ -61,6 +82,7 @@
     <div class="nav">
         <ul>
             <li><a href="http://calamus0427.github.io/css3-transition/css3-transition/" target="_blank">CSS3动画演示</a></li>
+            <li><a href="https://calamus0427.github.io/calamus-live2d/demo/" target="_blank">live2d网页看板娘</a></li>
             <li>
                 <a href="#" class="menu_1">Vue项目</a>
                 <ul>
@@ -81,10 +103,18 @@
                     <li><a href="https://calamus0427.github.io/calamus_game/canvas/guaguale/demo1/" target="_blank">东边的山坡上有两头牛</a></li>
                 </ul>
             </li>
+            <li>
+                <a href="#" class="menu_1">小程序</a>
+                <ul>
+                    <li><a href="https://calamus0427.github.io/calamus-wechat/#/" target="_blank">小程序分享会</a></li>
+                    <li><a onclick="showImg()">小程序项目：233次元</a></li>
+                </ul>
+            </li>
             <li><a href="./my-angular/demo1/index.html">angular项目</a></li>
-
         </ul>
     </div>
+    <a id="img_bg" onclick="hideImg()" class="img_bg"></a>
+    <img id="img" class="img" src="https://www.calamus.xyz/wp-content/uploads/2018/06/2018062107120698.jpg" />
     <canvas id="canvas"></canvas>
 
     <script>
@@ -208,6 +238,22 @@
         window.onmouseout = function() {
             current_circle.x = null;
             current_circle.y = null;
+        }
+    </script>
+    <script>
+        function showImg() {
+            var img = document.getElementById("img");
+            var img_bg = document.getElementById("img_bg")
+            console.log("打开")
+            img.style.display = "block"
+            img_bg.style.display = "block"
+        }
+
+        function hideImg() {
+            var img = document.getElementById("img");
+            var img_bg = document.getElementById("img_bg")
+            img.style.display = "none"
+            img_bg.style.display = "none"
         }
     </script>
 </body>
