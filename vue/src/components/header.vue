@@ -8,7 +8,6 @@
     <div class="right">
       <img class="headerImg-right" src="../../static/image/header2.png" alt="">
     </div>
-
   </div>
 </template>
 
@@ -34,7 +33,7 @@ export default {
       console.log(str)
     },
     showDes(){
-this.showDesFlag = true;
+      this.showDesFlag = true;
     }
   }
 }
@@ -73,6 +72,14 @@ this.showDesFlag = true;
     word-wrap: break-word;
     margin-left: -150px;
     text-align: center;
+    z-index: 2;
+    font-weight: 300;
+    color: #8e8c8c;
+    margin-top: 10px;
+    font: italic 20px/1.3em Georgia,serif;
+    font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif;
+    font-style: normal;
+
 }
 .left,.right{
   width:100%;
