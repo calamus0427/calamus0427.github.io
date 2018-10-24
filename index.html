@@ -1,0 +1,83 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="keywords" content="梁素娅，calamus，菖蒲，天宫蒲，世界第一帅蒲，技术博客，前端开发，web前端">
+    <meta name="description" content="梁素娅：www.calamus.xyz，前端开发工程师，二次元美少女">
+    <meta name="author" content="梁素娅，calamus，蒲">
+    <meta name="robots" content="index,follow" />
+    <link rel="stylesheet" href="css/mystyle.css" />
+    <link rel="stylesheet" href="css/reset.css" />
+    <title>Calamus</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+</head>
+
+<body class="background">
+    <!-- <div class="loading">
+        <img src="./images/koi.jpg" />
+    </div> -->
+    <div class="show">
+        <a title="music" onclick="musicControl()"><img class="musicControl" alt="显示音乐" src="./images/calamus.jpg" /></a>
+        <canvas id="canvas" width="1000" height="380"></canvas>
+        <header class="indextop">
+            <div class="musicbgm">
+                <audio id="audio" style=" visibility: hidden " autoplay="autoplay " src="music\花澤香菜 - 恋爱サーキュレーション.mp3 " controls="controls ">
+                    Your browser does not support the audio element.
+                </audio>
+            </div>
+        </header>
+
+        <div class="indexnav ">
+            <ul class="indexmenu ">
+                <li><a art="my website " href="http://www.calamus.xyz " target="_blank ">my website</a></li>
+                <li><a art="my blog " href="http://www.cnblogs.com/calamus/ " target="_blank ">my blog</a></li>
+                <li><a art="my project " href="./project/index.html " target="_blank ">my project</a></li>
+                <li><a art="my github " href="http://www.github.com/calamus0427 " target="_self ">my github</a></li>
+                <!-- <li><a art="dear you " href="./pages/dearMe/7/index.html ">dear me</a></li> -->
+            </ul>
+        </div>
+    </div>
+
+    <script src="js/jquery/jquery.min.js "></script>
+    <!-- <script src="https://cdn.bootcss.com/jquery/3.1.0/jquery.min.js "></script> -->
+    <script type="text/javascript " src="js/commonFunctions.js "></script>
+    <script src="js/html5.js "></script>
+    <script src="js/star.js "></script>
+    <script>
+        $(function() {
+            var bgCount = 1;
+
+            function changeBg() {
+
+                var bgUrl = [
+                    "./images/bg1.jpg ",
+                    "./images/bg2.jpg ",
+                    "./images/bg5.jpeg ",
+                    "./images/bg3.jpeg ",
+                    "./images/bg7.jpg ",
+                    "./images/bg8.jpg ",
+                ];
+                bgCount = (bgCount + 1) % bgUrl.length;
+                $('body').css('background-image', 'url(' + bgUrl[bgCount] + ')');
+                setTimeout(changeBg, 1000 * 60);
+            }
+            changeBg();
+            // setInterval(function() {
+            //     // $(".loading ").fadeOut();
+            //     $('.loading').fadeOut();
+            // }, 1200)
+
+        })
+
+        function musicControl() {
+            var music = document.getElementById("audio");
+            music.style.visibility = music.style.visibility ==
+                'hidden' ? 'visible' : 'hidden';
+        }
+    </script>
+</body>
+
+</html>
