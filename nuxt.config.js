@@ -2,6 +2,14 @@ const pkg = require('./package')
 
 module.exports = {
   mode: 'spa',
+  router: {
+    base: './',
+    mode: 'hash',
+    linkActiveClass: 'active-link1',
+    scrollBehavior: function (to, from, savedPosition) {
+      return { x: 0, y: 0 }
+    }
+  },
 
   /*
    ** Headers of the page
