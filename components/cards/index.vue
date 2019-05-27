@@ -13,12 +13,12 @@ export default {
     name:'cards',
     data: () => ({
       imgList:[
-        require('../../assets/card/A1.jpg'),
-        require('../../assets/card/A2.jpg'),
-        require('../../assets/card/A3.jpg'),
-        require('../../assets/card/A4.jpg'),
-        require('../../assets/card/Q.jpg'),
-        require('../../assets/card/Joker.jpg')]
+        'https://cdn.calamus.xyz/github/A1.jpg',
+        'https://cdn.calamus.xyz/github/A2.jpg',
+        'https://cdn.calamus.xyz/github/A3.jpg',
+        'https://cdn.calamus.xyz/github/A4.jpg',
+        'https://cdn.calamus.xyz/github/Q.jpg',
+        'https://cdn.calamus.xyz/github/Joker.jpg']
     }),
     props:{
         img:{

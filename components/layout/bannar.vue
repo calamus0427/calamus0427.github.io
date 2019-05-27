@@ -129,7 +129,7 @@ export default {
     height: 110%;
     margin-top: -2%;
     overflow: hidden;
-    background: url('../../assets/banner/bg.png');
+    background: url('https://cdn.calamus.xyz/github/bg.png');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: bottom right;
