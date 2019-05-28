@@ -2,11 +2,11 @@ const pkg = require('./package')
 
 module.exports = {
   mode: 'spa',
-  router: {
-    base: '/',
+  // router: {
+  //   base: '/',
   //build时的路径设置
   // base: './',
-  },
+  // },
   /*
    ** Headers of the page
    */
