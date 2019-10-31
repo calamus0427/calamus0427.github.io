@@ -31,7 +31,7 @@
             </p>
           </div>
           <div class="right">
-            <p>email： <a href="mailto:kiz.calamus@gmail.com">kiz.calamus@gmail.com</a>
+            <p>email： <a href="kiz.calamus@gmail.com">kiz.calamus@gmail.com</a>
               </p>
             <p>
               <img src="https://cdn.calamus.xyz/qq%E7%BE%A4.png" alt="">
@@ -217,13 +217,13 @@ footer{
     background: #FAF4E2;
     width: 100%;
     margin-top:100px;
+    font-family: 'webfont';
     .container_arrow{
       min-height:60px;
       position: relative;
     }
     .contract{
       display:flex;
-      font-family: "Bad Script", cursive;
       .left{
         width:50%;
         text-align:right;

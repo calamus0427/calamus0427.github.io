@@ -118,12 +118,6 @@ export default {
               src:'//www.cnblogs.com/calamus/p/9675213.html',
               des:'',
               img:'',
-            },
-            {
-              title:'超链云配',
-              src:'//www.cnblogs.com/calamus/p/9675213.html',
-              des:'',
-              img:'',
             }
           ]
         },{

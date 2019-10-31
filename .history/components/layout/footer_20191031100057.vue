@@ -31,8 +31,7 @@
             </p>
           </div>
           <div class="right">
-            <p>email： <a href="mailto:kiz.calamus@gmail.com">kiz.calamus@gmail.com</a>
-              </p>
+            <p>email： kiz.calamus@gmail.com</p>
             <p>
               <img src="https://cdn.calamus.xyz/qq%E7%BE%A4.png" alt="">
               <img src="https://cdn.calamus.xyz/wechat.jpg" alt="">
@@ -223,7 +222,6 @@ footer{
     }
     .contract{
       display:flex;
-      font-family: "Bad Script", cursive;
       .left{
         width:50%;
         text-align:right;

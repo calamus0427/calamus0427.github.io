@@ -2,9 +2,10 @@ const pkg = require('./package')
 
 module.exports = {
   mode: 'spa',
-  router: {
-    base: './',
-  },
+  // router: {
+  //   base: './',
+  //   mode:'hash'
+  // },
   /*
    ** Headers of the page
    */

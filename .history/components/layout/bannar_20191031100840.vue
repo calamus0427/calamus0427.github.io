@@ -97,6 +97,7 @@ export default {
   position: relative;
   .calamus {
     position: absolute;
+    font-size: 3rem;
     top: 40vh;
     left: 6rem;
     z-index: 1001;

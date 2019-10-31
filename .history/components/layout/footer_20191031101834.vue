@@ -31,7 +31,7 @@
             </p>
           </div>
           <div class="right">
-            <p>email： <a href="mailto:kiz.calamus@gmail.com">kiz.calamus@gmail.com</a>
+            <p>email： <a href="kiz.calamus@gmail.com">kiz.calamus@gmail.com</a>
               </p>
             <p>
               <img src="https://cdn.calamus.xyz/qq%E7%BE%A4.png" alt="">

@@ -97,11 +97,12 @@ export default {
   position: relative;
   .calamus {
     position: absolute;
+    font-size: 3rem;
     top: 40vh;
     left: 6rem;
     z-index: 1001;
     opacity: 0.9;
-    font: italic 3em Georgia, serif;
+    font-family:Arial,'Times New Roman','Microsoft YaHei',SimHei;
   }
   .moto {
     position: absolute;
