@@ -1,3 +1,12 @@
+<!--
+ * @Author       : Calamus
+ * @websit       : calamus.xyz
+ * @Description  :
+ * @FilePath     : /calamus0427.github.io/components/layout/footer.vue
+ * @Date         : 2019-10-31 13:46:41
+ * @LastEditors  : Calamus
+ * @LastEditTime : 2020-04-09 12:40:21
+ -->
 <template>
       <footer
         >
@@ -100,6 +109,9 @@ export default {
         transform: none;
     }
 }
+p,a,.copyright{
+  font-family: 'webfont';
+}
 
 .container,.message,.cat {
     display: block;
@@ -193,7 +205,7 @@ export default {
 }
 
 .message p {
-	font-family: Helvetica, Verdana, sans-serif;
+  font-family: 'webfont';
   font-size: 0.5em;
 	text-align: center;
 }
@@ -213,6 +225,7 @@ export default {
 
 
 footer{
+    font-family: 'webfont';
     background: linear-gradient(to left,#F6E3B7,#FBFBF3);
     background: #FAF4E2;
     width: 100%;

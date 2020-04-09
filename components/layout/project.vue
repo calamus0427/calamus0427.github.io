@@ -1,3 +1,12 @@
+<!--
+ * @Author       : Calamus
+ * @websit       : calamus.xyz
+ * @Description  :
+ * @FilePath     : /calamus0427.github.io/components/layout/project.vue
+ * @Date         : 2019-10-31 13:46:42
+ * @LastEditors  : Calamus
+ * @LastEditTime : 2020-04-09 12:37:50
+ -->
 <template>
 <section>
   <div class="box11_ribbon">项目</div>
@@ -30,24 +39,24 @@ export default {
           children:[
             {
               title:'vue-element后台项目',
-              src:'//calamus.wiki/vue-element-admin-calamus/#/login',
+              src:'//calamus0427.github.io/vue-element-admin-calamus/#/login',
               des:'',
               img:'',
             },
             {
               title:'vue博客',
-              src:'//calamus.wiki/my-blog/#',
+              src:'//calamus0427.github.io/my-blog/#',
               des:'',
               img:'',
             },
             {
               title:'vue cli v3 + d3.js',
-              src:'//calamus.wiki/vue-d3/#/',
+              src:'//calamus0427.github.io/vue-d3/#/',
               des:'',
               img:'',
             },{
               title:'MeowUI 组件库',
-              src:'//calamus.wiki/MeowMeowUI/',
+              src:'//calamus0427.github.io/MeowMeowUI/',
               des:'',
               img:'',
             },
@@ -134,7 +143,7 @@ export default {
           children:[
             {
               title:'CSS3动画演示',
-              src:'//calamus.wiki/css3-transition/css3-transition/',
+              src:'//calamus0427.github.io/css3-transition/css3-transition/',
               des:'',
               img:'',
             },
@@ -146,7 +155,7 @@ export default {
             },
             {
               title:'live2d网页看板娘',
-              src:'//calamus.wiki/calamus-live2d/demo/',
+              src:'//calamus0427.github.io/calamus-live2d/demo/',
               des:'',
               img:'',
             },
@@ -206,9 +215,11 @@ export default {
     width:18%;
     margin-bottom:2rem;
     margin-top:2rem;
+    font-family: 'webfont';
   }
 }
 .box11_ribbon{
+    font-family: 'webfont';
     margin: 2rem auto;
     width: 200px;
     height: 40px;

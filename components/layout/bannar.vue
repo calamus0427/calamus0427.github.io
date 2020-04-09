@@ -1,3 +1,12 @@
+<!--
+ * @Author       : Calamus
+ * @websit       : calamus.xyz
+ * @Description  :
+ * @FilePath     : /calamus0427.github.io/components/layout/bannar.vue
+ * @Date         : 2019-10-31 13:46:41
+ * @LastEditors  : Calamus
+ * @LastEditTime : 2020-04-09 12:37:05
+ -->
 <template>
     <div ref="container" class="toolbar_container"        >
       <div class="calamus">
@@ -104,6 +113,7 @@ export default {
     font: italic 3em Georgia, serif;
   }
   .moto {
+    font-family: 'webfont';
     position: absolute;
     font-size: 1.2rem;
     top: 55vh;
@@ -111,7 +121,6 @@ export default {
     z-index: 1001;
     color: brown;
     opacity: 0.8;
-    font-family: 'webfont';
   }
   .filt {
     position: absolute;

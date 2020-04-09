@@ -1,3 +1,12 @@
+<!--
+ * @Author       : Calamus
+ * @websit       : calamus.xyz
+ * @Description  :
+ * @FilePath     : /calamus0427.github.io/layouts/simple.vue
+ * @Date         : 2019-10-31 13:46:42
+ * @LastEditors  : Calamus
+ * @LastEditTime : 2020-04-09 12:36:53
+ -->
 <template>
   <div>
     <nuxt />
@@ -78,7 +87,7 @@ export default {
 }
 
 html {
-  font-family: 'Source Sans Pro', -apple-system, BlinkMacSystemFont, 'Segoe UI',
+  font-family: 'webfont','Source Sans Pro', -apple-system, BlinkMacSystemFont, 'Segoe UI',
     Roboto, 'Helvetica Neue', Arial, sans-serif;
   font-size: 16px;
   word-spacing: 1px;
