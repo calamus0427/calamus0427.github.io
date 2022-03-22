@@ -22,8 +22,8 @@
               <a href="https://www.calamus.xyz/" target="_blank">主站</a>
               <a href="http://github.com/calamus0427" target="_blank">github</a>
               <a href="https://www.cnblogs.com/calamus" target="_blank">blog</a>
-              <a href="http://calamus.wiki/daily-FE/" target="_blank">每日前端</a>
-              <a href="http://calamus.wiki/#/" target="_blank">关于我</a>
+              <a href="http://calamus0427.github.io/daily-FE/" target="_blank">每日前端</a>
+              <a href="http://calamus0427.github.io/#/" target="_blank">关于我</a>
             </p>
   </div>
   <div class="sleep-walker">
