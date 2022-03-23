@@ -21,8 +21,8 @@
         <a-timeline-item>
           <a-icon slot="dot" type="crown" style="font-size: 16px;color: #6b4b47" />
           <div>
-            <a  href="http://calamus0427.github.io/docs/uni/introduce/#/" target="_blank" class="title">Uni从入门到女装</a>
-            <p class="content">三端统一框架 💯 Uni学习笔记 🙌</p>
+            <a  href="http://calamus0427.github.io/docs/uni-app/introduce/#/" target="_blank" class="title">uni-app从入门到女装</a>
+            <p class="content">跨端统一框架 💯 uni-app学习笔记 🙌</p>
             <p class="img_des"><img src="https://cdn.calamus.xyz/snapshots/uni.png" alt=""></p>
           </div>
         </a-timeline-item>

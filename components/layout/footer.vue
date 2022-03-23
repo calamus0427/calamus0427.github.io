@@ -4,8 +4,8 @@
  * @Description  :
  * @FilePath     : /calamus0427.github.io/components/layout/footer.vue
  * @Date         : 2019-10-31 13:46:41
- * @LastEditors  : Calamus
- * @LastEditTime : 2020-04-09 12:40:21
+ * @LastEditors: Calamus
+ * @LastEditTime: 2022-03-23 15:16:22
  -->
 <template>
       <footer
@@ -28,7 +28,7 @@
         <div class="contract">
           <div class="left">
             <p>
-              <img src="https://cdn.calamus.xyz/leimu.jpeg" alt="">
+              <img src="https://cdn.calamus.xyz/pp/muki.jpg" alt="">
             </p>
             <p>专注前端开发的二次元美少女</p>
             <p>
